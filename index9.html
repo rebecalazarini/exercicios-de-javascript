@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc009</title>
+</head>
+<body>
+    <h1>Exercicio009</h1>
+</body>
+<h1>Mostrando valores </h1>
+
+<button id="Botao">Clique Aqui</button>
+<button id="zerar">Zerar</button>
+<p id="i">cliques: 0</p>
+
+
+<script>
+   
+const botao = document.getElementById('Botao');
+const zerar = document.getElementById('zerar');
+const iElemento = document.getElementById('i');
+
+let i = 0;
+
+
+botao.addEventListener('click', function() {
+    i++;
+    iElemento.textContent = `O contador esta com ${i} cliques`; 
+}
+);
+
+
+zerar.addEventListener('click', function() {
+    i = 0;
+    iElemento.textContent = `O contador esta com ${i} cliques`; 
+}
+);
+
+
+    
+</script>
+</html>
