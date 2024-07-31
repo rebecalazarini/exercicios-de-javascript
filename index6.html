@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc006</title>
+</head>
+<body>
+    <h1>Exercicio006</h1>
+</body>
+<h1>Somando dois numeros</h1>
+<button onclick="clique()">Inicie a soma</button>
+<p id="mensagem"></p>
+
+<script>
+    function clique(){
+    let n1 = Number(window.prompt('Digite um Numero: '));
+    let mensagem = document.querySelector("#mensagem");
+
+    let n2 = Number(window.prompt('Digite um Numero: '));
+    let mensagem1 = document.querySelector("#mensagem1");
+
+
+    mensagem.innerHTML = `<p>A soma de ${n1} e ${n2} é ${n1+n2}</p>`
+}
+        
+    
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc007</title>
+</head>
+<body>
+    <h1>Exercicio007</h1>
+</body>
+<h1>Somando dois numeros</h1>
+<button onclick="clique()">Veja a média</button>
+<p id="mensagem"></p>
+
+<script>
+    function clique(){
+    let n1 = Number(window.prompt('Digite a nota 1: '));
+    let mensagem = document.querySelector("#mensagem");
+
+    let n2 = Number(window.prompt('Digite a nota 2: '));
+    let mensagem1 = document.querySelector("#mensagem1");
+
+    let n3 = Number(window.prompt('Digite a nota 3: '));
+    let mensagem3 = document.querySelector("#mensagem3");
+    
+    mensagem.innerHTML = `<p>A média de ${n1} , ${n2} e ${n3} é ${(n1+n2+n3)/3}</p>`
+}
+        
+    
+</script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc008</title>
+</head>
+<body>
+    <h1>Exercicio008</h1>
+</body>
+<h1>Mostrando valores </h1>
+<button onclick="clique()">calcule um numero</button>
+<p id="mensagem1"></p>
+<p id="mensagem2"></p>
+<p id="mensagem3"></p>
+<p id="mensagem4"></p>
+<p id="mensagem5"></p>
+<p id="mensagem6"></p>
+
+
+<script>
+    function clique(){
+        let n1 = Number(window.prompt('Digite um numero: '));
+
+        let mensagem1 = document.querySelector("#mensagem1");
+        let mensagem2 = document.querySelector("#mensagem2");
+        let mensagem3 = document.querySelector("#mensagem3");
+        let mensagem4 = document.querySelector("#mensagem4");
+        let mensagem5 = document.querySelector("#mensagem5");
+        let mensagem6 = document.querySelector("#mensagem6");
+
+        mensagem1.innerHTML = `<p>O numero que sera analizado é o ${n1}</p>`
+        mensagem2.innerHTML = `<p>O seu valor absoluto é ${n1}</p>`
+        mensagem3.innerHTML = `<p>A sua raiz quadrada é ${Math.sqrt(n1)}</p>`
+        mensagem4.innerHTML = `<p>A sua raiz cubica é ${Math.cbrt(n1)}</p>`
+        mensagem5.innerHTML = `<p> O valor de ${n1}² é ${Math.pow(n1,2)}</p>`
+        mensagem6.innerHTML = `<p> O valor de ${n1}³ é ${Math.pow(n1,3)}</p>`
+
+    }
+
+    
+</script>
+</html>
