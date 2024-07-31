@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exerc005</title>
+</head>
+<body>
+    <h1>Exercicio005</h1>
+</body>
+<h1>Trabalhando com numeros</h1>
+<button onclick="clique()">Clique aqui</button>
+<p id="mensagem"></p>
+
+<script>
+    function clique(){
+    let n1 = Number(window.prompt('Digite um Numero: '));
+    let mensagem = document.querySelector("#mensagem");
+
+
+    mensagem.innerHTML = `<p>O dobro de ${n1} é ${n1*2}, e a metade é ${n1/2}</p>`
+}
+        
+    
+</script>
+</html>
